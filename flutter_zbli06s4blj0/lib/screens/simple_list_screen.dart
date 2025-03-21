@@ -6,13 +6,13 @@ class SimpleListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Простой список')),
+      appBar: AppBar(title: const Text('Простой список'), backgroundColor: Colors.green,),
       body: ListView(
         children: const [
           ListTile(title: Text('Первая строка')),
-          Divider(),
+          Divider(thickness: 5,),
           ListTile(title: Text('Вторая строка')),
-          Divider(),
+          Divider(thickness: 5,),
           ListTile(title: Text('Третья строка')),
         ],
       ),
