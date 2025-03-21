@@ -14,7 +14,7 @@ class _InfinityMathScreenState extends State<InfinityMathScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Степени числа 2')),
+      appBar: AppBar(title: const Text('Степени числа 2'), backgroundColor: Colors.green,),
       body: ListView.builder(
         itemBuilder: (context, i) {
           if (i.isOdd) return const Divider();

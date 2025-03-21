@@ -6,7 +6,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Главный экран')),
+      appBar: AppBar(centerTitle: true, title: const Text('Главный экран'), backgroundColor: Colors.green,),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -14,16 +14,25 @@ class HomeScreen extends StatelessWidget {
             ElevatedButton(
               child: const Text('Простой список'),
               onPressed: () => Navigator.pushNamed(context, '/simple'),
+              style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.green,
+     ),
             ),
             const SizedBox(height: 20), 
             ElevatedButton(
               child: const Text('Бесконечный список'),
               onPressed: () => Navigator.pushNamed(context, '/infinity'),
+              style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.green,
+     ),
             ),
             const SizedBox(height: 20), 
             ElevatedButton(
               child: const Text('Степени числа 2'),
               onPressed: () => Navigator.pushNamed(context, '/math'),
+              style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.green,
+     ),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
@@ -35,7 +44,10 @@ class HomeScreen extends StatelessWidget {
                     SnackBar(content: Text('Вы выбрали: $result')),
                   );
                 }
-              },
+             },
+              style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.green,
+     ),
             ),
           ],
         ),
