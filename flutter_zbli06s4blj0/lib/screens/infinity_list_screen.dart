@@ -13,10 +13,10 @@ class _InfinityListScreenState extends State<InfinityListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Бесконечный список')),
+      appBar: AppBar(title: const Text('Бесконечный список'), backgroundColor: Colors.green,),
       body: ListView.builder(
         itemBuilder: (context, i) {
-          if (i.isOdd) return const Divider();
+          if (i.isOdd) return const Divider(thickness: 3, color: Colors.green,);
           
           final index = i ~/ 2;
           if (index >= _items.length) {
